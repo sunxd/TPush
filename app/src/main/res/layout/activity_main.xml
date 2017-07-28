@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tian.net.terminal.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txvTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Push"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Push" />
+
+    <EditText
+        android:id="@+id/edtPushTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Push"
+        app:layout_constraintBottom_toBottomOf="@+id/txvTips"
+        app:layout_constraintLeft_toRightOf="@+id/txvTips"
+        app:layout_constraintTop_toTopOf="@+id/txvTips"
+        tools:text="Push"
+        app:layout_constraintRight_toLeftOf="@+id/btnSbmt"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="64dp"
+        android:text="Receive"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/txvTips"
+        app:layout_constraintTop_toBottomOf="@+id/txvTips"
+        tools:layout_editor_absoluteY="65dp"
+        tools:text="Receive" />
+
+    <Button
+        android:id="@+id/btnSbmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp" />
+
+
+</android.support.constraint.ConstraintLayout>
